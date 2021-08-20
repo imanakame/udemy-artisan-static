@@ -4,14 +4,15 @@ return [
     'production' => false,
     'baseUrl' => 'https://artisanstatic.netlify.app',
     'site' => [
-        'title' => 'My Jigsaw Blog',
-        'description' => 'Personal blog of John Doe.',
+        'title' => 'Udemy講師のなり方',
+        'description' => 'Udemy講師のなり方',
         'image' => 'default-share.png',
     ],
     'owner' => [
-        'name' => 'John Doe',
-        'twitter' => 'johndoe',
-        'github' => 'johndoe',
+        'name' => '今中みのる',
+        'twitter' => 'imanakame',
+        'github' => 'imanakame',
+        'udemy' => 'jin-zhong-ren',
     ],
     'services' => [
         'cmsVersion' => '2.10.156',
@@ -19,8 +20,8 @@ return [
         'disqus' => 'artisanstatic',
         'formcarry' => 'XXXXXXXXXXXX',
         'cloudinary' => [
-            'cloudName' => 'artisanstatic',
-            'apiKey' => '365895137117119',
+            'cloudName' => 'imanakame',
+            'apiKey' => '642993542972666',
         ],
     ],
     'collections' => [
@@ -30,12 +31,12 @@ return [
             'extends' => '_layouts.post',
             'section' => 'postContent',
             'isPost' => true,
-            'comments' => true,
+            'comments' => false,
             'tags' => [],
             'hasTag' => function ($page, $tag) {
                 return collect($page->tags)->contains($tag);
             },
-            'prettyDate' => function ($page, $format = 'M j, Y') {
+            'prettyDate' => function ($page, $format = 'Y/m/d') {
                 return date($format, $page->date);
             },
         ],

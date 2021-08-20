@@ -22,10 +22,10 @@
             <nav>
                 <strong>{{ $page->site->title }}</strong><br>
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/posts">Posts</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/">ホーム</a></li>
+                    <li><a href="/posts">記事</a></li>
+                    <li><a href="/about">About Me</a></li>
+{{--                    <li><a href="/contact">Contact</a></li>--}}
                 </ul>
             </nav>
         </header>
@@ -38,10 +38,10 @@
 
         <footer>
             <small>
-                &copy; <span data-year></span> {{ $page->owner->name }} &nbsp;&bull;&nbsp;
-                <a href="/feed.atom">RSS</a> &nbsp;&bull;&nbsp;
-                Maintained by Ranie Santos &nbsp;&bull;&nbsp;
-                <a href="https://github.com/raniesantos/artisan-static">GitHub repo</a>
+                <span data-year></span> {{ $page->owner->name }}
+                <a href="https://twitter.com/{{ $page->owner->twitter }}" target="_blank">Twitter</a> /
+                <a href="https://www.udemy.com/user/{{ $page->owner->udemy }}" target="_blank">Udemy</a> /
+                <a href="https://github.com/{{ $page->owner->github }}" target="_blank">GitHub</a>
             </small>
         </footer>
     </section>
