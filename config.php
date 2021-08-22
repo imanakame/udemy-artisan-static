@@ -2,7 +2,7 @@
 
 return [
     'production' => false,
-    'baseUrl' => 'https://artisanstatic.netlify.app',
+    'baseUrl' => 'https://udemy-create.netlify.app/',
     'site' => [
         'title' => 'Udemy講師のなり方',
         'description' => 'Udemy講師のなり方',
@@ -10,9 +10,10 @@ return [
     ],
     'owner' => [
         'name' => '今中みのる',
-        'twitter' => 'imanakame',
-        'github' => 'imanakame',
-        'udemy' => 'jin-zhong-ren',
+        'twitter' => 'https://twitter.com/imanakame',
+        'github' => 'https://github.com/imanakame',
+        'udemy' => 'https://www.udemy.com/user/jin-zhong-ren',
+        'StandFm' => 'https://stand.fm/channels/60dc554e04bb1691c1fc0d78',
     ],
     'services' => [
         'cmsVersion' => '2.10.156',

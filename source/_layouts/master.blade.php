@@ -39,9 +39,10 @@
         <footer>
             <small>
                 <span data-year></span> {{ $page->owner->name }}
-                <a href="https://twitter.com/{{ $page->owner->twitter }}" target="_blank">Twitter</a> /
-                <a href="https://www.udemy.com/user/{{ $page->owner->udemy }}" target="_blank">Udemy</a> /
-                <a href="https://github.com/{{ $page->owner->github }}" target="_blank">GitHub</a>
+                <a href="{{ $page->owner->twitter }}" target="_blank">Twitter</a> /
+                <a href="{{ $page->owner->udemy }}" target="_blank">Udemy</a> /
+                <a href="{{ $page->owner->StandFm }}" target="_blank">StandFm</a> /
+                <a href="{{ $page->owner->github }}" target="_blank">GitHub</a>
             </small>
         </footer>
     </section>
